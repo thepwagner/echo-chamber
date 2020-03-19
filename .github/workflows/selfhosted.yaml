@@ -1,0 +1,13 @@
+on:
+  issue_comment:
+    types: created
+jobs:
+  echo-timer:
+    name: Self-hosted Echo Timer
+    runs-on: self-hosted
+    steps:
+      - name: Echo timer
+        uses: thepwagner/echo-timer@master
+        with:
+          id: Self-Hosted
+          token: ${{ secrets.GITHUB_TOKEN }}
