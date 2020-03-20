@@ -11,3 +11,4 @@ jobs:
         with:
           id: Self-Hosted
           token: ${{ secrets.GITHUB_TOKEN }}
+      - run: "true"
